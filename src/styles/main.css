@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 3%;
-  width: 90vw;
+  width: 92vw;
   height: 6vh;
   align-items: center;
   margin: 0 auto;
@@ -41,13 +41,13 @@ body {
   height: 100%;
 }
 .header .headerBox .headerLogo {
-  width: 30%;
-  height: 50%;
+  width: 25%;
+  height: 35%;
 }
 .header .navMenu {
   width: 40%;
   height: auto;
-  background-color: none;
+  background-color: #fff;
   border-top: 1px solid #b4b4b467;
   color: #000;
   font-family: 'Roboto';
@@ -104,4 +104,67 @@ body {
 }
 .header .navMenu .menuList li a:hover {
   background-color: rgba(206, 206, 206, 0.40392157);
+}
+.trending {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 5vh;
+  background-color: #951B3D;
+  justify-content: center;
+  align-items: center;
+}
+.trending .trendingCenter {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 92vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.trending .trendingBox {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 65%;
+  align-items: center;
+  overflow-x: auto;
+  gap: 8px;
+  scroll-snap-type: x mandatory;
+}
+.trending .trendingSpan {
+  display: flex;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #fff;
+  font-size: 100%;
+  margin-left: 0;
+}
+.trending .trendingBox a {
+  font-family: 'Roboto';
+  font-size: 80%;
+  text-decoration: none;
+  color: #fff;
+  white-space: nowrap;
+  text-align: left;
+  border-right: 1px solid #fff;
+  padding-right: 2vw;
+}
+.trending .socialBox {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.trending .socialBox a {
+  display: flex;
+  height: 50%;
+  width: 50%;
+}
+.trending .socialBox img {
+  width: 100%;
+  height: 100%;
 }
