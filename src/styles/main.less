@@ -4,6 +4,7 @@
 @hover: #b4b4b467;
 @roboto: 'Roboto';
 @fontColor: #000;
+@audioPlayer: rgb(247, 210, 95);
 
 
 * {
@@ -237,7 +238,6 @@ html, body {
 
 .start{
     display: flex;
-    border: 1px solid red;
     flex-direction: row;
     width: 100vw;
     height: 7vh;
@@ -350,7 +350,6 @@ html, body {
 .headline{
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     justify-content: center;
     align-items: center;
     height: 23vh;
@@ -378,4 +377,74 @@ html, body {
     color: @fontColor;
     height: auto;
     font-size: 1.1rem;
+}
+
+
+
+// ----------------------------------------- SIXTH PARTH
+
+
+.audioPlayer{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.audioPlayerCenter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 88vw;
+    height: 100%;
+}
+
+.audioPlayerBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 52%;
+    height: 100%;
+    background-color: @audioPlayer;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.audioButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    background: none;
+}
+
+.audioPlayerBox img{
+    width: 80;
+    height: 80%;
+}
+
+.audioTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+}
+
+.audioTitle h1{
+    font-size: 1rem;
+    color: @fontColor;
+    margin: 0;
+}
+
+.audioTitle p{
+    font-size: 0.7rem;
+    color: @fontColor;
+    margin: 0;
 }
