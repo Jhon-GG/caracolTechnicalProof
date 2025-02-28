@@ -172,12 +172,13 @@ body {
 }
 .pageLead {
   display: flex;
+  border: 1px solid red;
   justify-content: center;
   align-items: center;
-  height: 15vh;
+  height: 8vh;
   width: 100vw;
 }
 .pageLead img {
-  width: 300%;
+  width: 150%;
   height: 100%;
 }
