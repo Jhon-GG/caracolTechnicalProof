@@ -287,7 +287,7 @@ body {
 }
 .headlineBox h1 {
   font-size: 1.8rem;
-  color: #951B3D;
+  color: #EE2c64;
   height: auto;
   margin: 0 0 0 0 ;
 }
@@ -303,7 +303,6 @@ body {
   height: 5vh;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 }
 .audioPlayerCenter {
   display: flex;
@@ -352,4 +351,52 @@ body {
   font-size: 0.7rem;
   color: #000;
   margin: 0;
+}
+.share {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 3vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+.shareBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 88vw;
+  height: 100%;
+}
+.shareBox h1 {
+  width: auto;
+  height: auto;
+  font-size: 1rem;
+  color: #EE2c64;
+  margin: 0;
+}
+.shareIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 3vh;
+  border: 1px solid red;
+}
+.shareIconBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 88vw;
+  height: 100%;
+  gap: 5px;
+}
+.shareIconBox a {
+  width: 10%;
+  height: 100%;
+}
+.shareIconBox img {
+  width: 100%;
+  height: 100%;
 }
