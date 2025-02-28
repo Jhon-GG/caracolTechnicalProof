@@ -8,6 +8,7 @@
 
 * {
     margin-top: 0;
+    font-family: @roboto;
 }
 
 html, body {
@@ -63,7 +64,6 @@ html, body {
     background-color: @menuColor;
     border-top: 1px solid @hover;
     color: @fontColor;
-    font-family: @roboto;
     position: absolute;
     top: 6vh;
     left: 0;
@@ -169,7 +169,6 @@ html, body {
 
 .trending .trendingSpan{
     display: flex;
-    font-family: @roboto;
     font-weight: bold;
     color: @menuColor;
     font-size: 100%; 
@@ -178,7 +177,6 @@ html, body {
 }
 
 .trending .trendingBox a{
-    font-family: @roboto;
     font-size: 80%;
     text-decoration: none;
     color: @menuColor;
@@ -264,7 +262,7 @@ html, body {
     height: auto;
     text-decoration: none;
     color: @navColor;
-    font-family: @roboto;
+    ;
     font-size: 90%;
 }
 
@@ -281,7 +279,7 @@ html, body {
     text-decoration: none;
     font-size: 90%;
     color: @navColor;
-    font-family: @roboto;
+    ;
 }
 
 .startHumor:hover {
@@ -303,7 +301,7 @@ html, body {
     text-decoration: none;
     color: @navColor;
     font-size: 90%;
-    font-family: @roboto;
+    ;
 }
 
 .startSosp:hover {
@@ -325,7 +323,7 @@ html, body {
 .start .spanTato{
     text-decoration: none;
     color: @fontColor;
-    font-family: @roboto;
+    ;
     width: auto;
     height: auto;
     font-size: 90%;
@@ -342,4 +340,42 @@ html, body {
     width: auto;
     height: auto;
     color: @navColor;
+}
+
+
+
+// -------------------------------------- FIFTH PART
+
+
+.headline{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    height: 23vh;
+    width: 100vw;
+}
+
+.headlineBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 88vw;
+    gap: 10px;
+}
+
+.headlineBox h1{
+    font-size: 1.8rem;
+    color: @navColor;
+    height: auto;
+    margin: 0 0 0 0 ;
+}
+
+.headlineBox p{
+    color: @fontColor;
+    height: auto;
+    font-size: 1.1rem;
 }
