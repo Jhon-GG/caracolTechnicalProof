@@ -129,7 +129,12 @@ html, body {
     background-color: lighten(@hover, 10%);
 }
 
-// ---------------------- SECOND PART
+
+
+
+// ------------------------------------- SECOND PART
+
+
 
 
 .trending{
@@ -160,6 +165,7 @@ html, body {
     overflow-x: auto;
     gap: 8px;
     scroll-snap-type: x mandatory;
+    scrollbar-width: none;
 }
 
 .trending .trendingSpan{
@@ -169,6 +175,7 @@ html, body {
     color: @menuColor;
     font-size: 100%; 
     margin-left: 0;   
+    text-decoration: none;
 }
 
 .trending .trendingBox a{
@@ -201,5 +208,24 @@ html, body {
 
 .trending .socialBox img{
     width: 100%;
+    height: 100%;
+}
+
+
+
+
+// ------------------------------------ THIRD PART
+
+
+.pageLead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100vw;
+}
+
+.pageLead img{
+    width: 300%;
     height: 100%;
 }
