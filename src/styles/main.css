@@ -16,6 +16,8 @@ body {
   min-height: 6vh;
   width: 100vw;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 .header .headerBox {
   display: flex;
@@ -24,14 +26,11 @@ body {
   width: 92vw;
   height: 6vh;
   align-items: center;
-  margin: 0 auto;
+  border: none;
 }
 .header .headerBox .headerBurger {
   border: none;
   background: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 10%;
   height: 80%;
   cursor: pointer;
@@ -118,7 +117,7 @@ body {
   display: flex;
   flex-direction: row;
   height: 100%;
-  width: 92vw;
+  width: 88vw;
   justify-content: space-between;
   align-items: center;
 }
@@ -181,4 +180,98 @@ body {
 .pageLead img {
   width: 150%;
   height: 100%;
+}
+.start {
+  display: flex;
+  border: 1px solid red;
+  flex-direction: row;
+  width: 100vw;
+  height: 7vh;
+  justify-content: center;
+  align-items: center;
+}
+.startBox {
+  display: flex;
+  flex-direction: row;
+  width: 88vw;
+  height: 100%;
+  align-items: center;
+  white-space: nowrap;
+  gap: 5px;
+}
+.startInicio {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  color: #951B3D;
+  font-family: 'Roboto';
+  font-size: 90%;
+}
+.startInicio:hover {
+  color: #EE2c64;
+  cursor: pointer;
+}
+.startHumor {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  font-size: 90%;
+  color: #951B3D;
+  font-family: 'Roboto';
+}
+.startHumor:hover {
+  color: #EE2c64;
+  cursor: pointer;
+}
+.boxSosp {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: auto;
+}
+.startSosp {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #951B3D;
+  font-size: 90%;
+  font-family: 'Roboto';
+}
+.startSosp:hover {
+  color: #EE2c64;
+  cursor: pointer;
+}
+.start .boxSpan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 32%;
+  height: auto;
+  padding: 0;
+}
+.start .spanTato {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Roboto';
+  width: auto;
+  height: auto;
+  font-size: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+.start span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  color: #951B3D;
 }
