@@ -2,7 +2,7 @@
 @menuColor: #fff;
 @navColor: #951B3D;
 @hover: #b4b4b467;
-@roboto: 'Roboto';
+@roboto: 'Lato';
 @fontColor: #000;
 @audioPlayer: rgb(247, 210, 95);
 
@@ -217,7 +217,6 @@ html, body {
 
 .pageLead{
     display: flex;
-    border: 1px solid red;
     justify-content: center;
     align-items: center;
     height: 8vh;
@@ -698,6 +697,361 @@ html, body {
         height: 100%;
     }
 
-    
+
+
+// ------------------------------------- THIRD DESKTOP PART
+
+
+    .pageLead{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+        width: 100vw;
+    }
+
+    .pageLead img{
+        width: 150%;
+        height: 100%;
+    }
+
+
+
+    // ------------------------------------ QUARTER PART
+
+
+    .start{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 7vh;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5% 0 0 0;
+    }
+
+    .startBox{
+        display: flex;
+        flex-direction: row;
+        width: 92vw;
+        height: 100%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .startInicio{
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: auto;
+        text-decoration: none;
+        color: @navColor;
+        font-size: 1.1rem;
+    }
+
+    .startInicio:hover {
+        color: @background;
+        cursor: pointer;
+    }
+
+    .startHumor{
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: auto;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: @navColor;
+    }
+
+    .startHumor:hover {
+        color: @background;
+        cursor: pointer;
+    }
+
+    .boxSosp{
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+
+    .startSosp{
+        overflow: hidden;
+        text-decoration: none;
+        color: @navColor;
+        font-size: 1.1rem;
+    }
+
+    .startSosp:hover {
+        color: @background;
+        cursor: pointer;
+    }
+
+
+    .start .boxSpan{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .start .spanTato{
+        text-decoration: none;
+        color: @fontColor;
+        width: auto;
+        height: auto;
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+    .start span{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        color: @navColor;
+    }
+
+
+
+    // -------------------------------------- FIFTH PART
+
+
+    .main{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 60vh;
+        width: 100vw;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mainCenter{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 55vw;
+    }
+
+
+    .headline{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        width: 55vw;
+        margin: 0;
+    }
+
+    .headlineBox{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: flex-start;
+        height: 100%;
+        width: 49vw;
+    }
+
+    .headlineBox h1{
+        font-size: 2rem;
+        color: @background;
+        height: auto;
+        width: 70%;
+        margin: 0;
+    }
+
+    .headlineBox p{
+        color: @fontColor;
+        height: auto;
+        width: 80%;
+        font-size: 1.3rem;
+    }
+
+
+
+    // ----------------------------------------- SIXTH PARTH
+
+
+    .audioPlayer{
+        display: flex;
+        flex-direction: row;
+        width: 55vw;
+        height: 6vh;
+        justify-content: center;      
+        align-items: center;
+        margin: 0;
+    }
+
+    .audioPlayerCenter{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 49vw;
+        height: 100%;
+    }
+
+    .audioPlayerBox{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 32%;
+        height: 100%;
+        background-color: @audioPlayer;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .audioButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 100%;
+        background: none;
+        border: none;
+    }
+
+    .audioButton:hover{
+        cursor: pointer;
+    }
+
+    .audioPlayerBox img{
+        width: 80;
+        height: 80%;
+    }
+
+    .audioTitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        height: 100%;
+    }
+
+    .audioTitle h1{
+        font-size: 1.3rem;
+        color: @fontColor;
+        margin: 0;
+    }
+
+    .audioTitle p{
+        font-size: 1rem;
+        color: @fontColor;
+        margin: 0;
+    }
+
+
+
+    // ----------------------------------------- SEVENTH PART
+
+
+
+    .share{
+        display: flex;
+        flex-direction: row;
+        width: 55vw;
+        height: 3vh;
+        justify-content: center;
+        align-items: center;
+        margin-top:1%;
+    }
+
+    .shareBox{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 49vw;
+        height: 100%;
+    }
+
+    .shareBox h1{
+        width: auto;
+        height: auto;
+        font-size: 1.3rem;
+        color: @background;
+        margin: 0;
+    }
+
+
+
+    // -------------------------------- EIGHT PART
+
+    .shareIcons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 55vw;
+        height: 3.5vh;
+        margin-top: 1%;
+    }
+
+    .shareIconBox{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 49vw;
+        height: 100%;
+        gap: 10px;
+    }
+
+    .shareIconBox a{
+        width: auto;
+        height: 100%;
+    }
+
+    .shareIconBox img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    // ---------------------------------------- NINTH PART
+
+
+    .banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 45vw;
+        height: 60vh;
+        background-image: url('https://i.pinimg.com/736x/02/d5/6e/02d56e691f101eca776607fd653491d0.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        margin-top: 0;
+        margin-left: 4%;
+    }
+
+    .bannerBox{
+        display: flex;
+        width: 42vw;
+        height: 35%;
+        justify-content: end;
+        align-items: center;
+        margin: 0;
+    }
+
+    .bannerBox img{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: 100%;
+    }
+
+
+
 }
 
