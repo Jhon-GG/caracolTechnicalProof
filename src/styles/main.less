@@ -550,3 +550,144 @@ html, body {
     width: auto;
     height: 100%;
 }
+
+
+
+
+
+// -------------------- VERSION DE DESKTOP -------------------------
+
+@media (min-width: 1024px){
+    .header {
+        display: flex;  
+        flex-direction: column;
+        height: auto;
+        min-height: 7vh;
+        width: 100vw;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header .headerBox {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5%;
+        width: 93vw;
+        height: 7vh; 
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .header .headerBox .headerBurger {
+        background: none;
+        width: auto;
+        height: 80%;
+        cursor: pointer;
+    }
+    
+    .header .headerBox .headerBurger .burgerImg {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .header .headerBox .headerLogo {
+        width: 10%;
+        height: 52%;
+    }
+    
+    .header .navMenu {
+        width: 20%;
+        height: auto;
+        background-color: @menuColor;
+        border-top: 1px solid @hover;
+        color: @fontColor;
+        position: absolute;
+        font-size: 1.3rem;
+        top: 7vh;
+        left: 0;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all 0.3s ease-in-out;
+        pointer-events: none;
+        z-index: 100;
+    }
+    
+
+
+// -------------------- SECOND PART DESKTOP
+
+    .trending{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height:6vh;
+        background-color: @navColor;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trending .trendingCenter{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 91.5vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .trending .trendingBox{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        height: 100%;
+        width: 65%;
+        align-items: center;
+        overflow-x: auto;
+        gap: 8px;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+
+    .trending .trendingSpan{
+        display: flex;
+        font-weight: bold;
+        color: @menuColor;
+        font-size: 1.2rem; 
+        margin-left: 0;   
+        text-decoration: none;
+    }
+
+    .trending .trendingBox a{
+        font-size: 80%;
+        text-decoration: none;
+        color: @menuColor;
+        white-space: nowrap;
+        text-align: left;
+        border-right: 1px solid #fff;
+        padding-right: 2vw;
+    }
+
+    .trending .socialBox{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 33%;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .trending .socialBox a{
+        display: flex;
+        height: 50%;
+        width: 50%;
+        
+    }
+
+    .trending .socialBox img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
