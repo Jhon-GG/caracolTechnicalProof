@@ -185,7 +185,6 @@ body {
   min-height: 7vh;
   justify-content: center;
   align-items: center;
-  margin-top: 2%;
 }
 .startBox {
   display: flex;
@@ -280,7 +279,7 @@ body {
   align-items: center;
   min-height: 23vh;
   width: 100vw;
-  margin-top: 7%;
+  margin-top: 1%;
 }
 .headlineBox {
   display: flex;
@@ -308,10 +307,10 @@ body {
   flex-direction: row;
   width: 100vw;
   min-height: 5vh;
-  height: 5vh;
+  height: 6vh;
   justify-content: center;
   align-items: center;
-  margin-top: 9%;
+  margin-top: 1%;
 }
 .audioPlayerCenter {
   display: flex;
@@ -353,7 +352,7 @@ body {
   height: 100%;
 }
 .audioTitle h1 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #000;
   margin: 0;
 }
@@ -367,9 +366,10 @@ body {
   flex-direction: row;
   width: 100vw;
   min-height: 3vh;
+  height: 3vh;
   justify-content: center;
   align-items: center;
-  margin-top: 6%;
+  margin-top: 1.5%;
 }
 .shareBox {
   display: flex;
@@ -400,7 +400,7 @@ body {
   align-items: center;
   width: 88vw;
   height: 100%;
-  gap: 10px;
+  gap: 4%;
 }
 .shareIconBox a {
   width: auto;
