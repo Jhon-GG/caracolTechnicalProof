@@ -405,11 +405,10 @@ body {
 }
 .banner {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100vw;
   height: 35vh;
-  justify-content: center;
-  align-items: center;
   margin-top: 20px;
   background-image: url('https://i.pinimg.com/736x/02/d5/6e/02d56e691f101eca776607fd653491d0.jpg');
   background-size: cover;
@@ -418,7 +417,15 @@ body {
 }
 .bannerBox {
   display: flex;
+  margin-top: 4%;
+  width: 93vw;
+  height: 30%;
+  justify-content: end;
+  align-items: center;
+}
+.bannerBox img {
+  display: flex;
   flex-direction: row;
-  width: 88vw;
+  width: auto;
   height: 100%;
 }
