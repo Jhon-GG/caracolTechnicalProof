@@ -186,6 +186,7 @@ body {
   height: 7vh;
   justify-content: center;
   align-items: center;
+  margin-top: 2%;
 }
 .startBox {
   display: flex;
@@ -275,6 +276,7 @@ body {
   align-items: center;
   height: 23vh;
   width: 100vw;
+  margin-top: 7%;
 }
 .headlineBox {
   display: flex;
@@ -295,6 +297,7 @@ body {
   color: #000;
   height: auto;
   font-size: 1.1rem;
+  text-align: justify;
 }
 .audioPlayer {
   display: flex;
@@ -303,6 +306,7 @@ body {
   height: 5vh;
   justify-content: center;
   align-items: center;
+  margin-top: 9%;
 }
 .audioPlayerCenter {
   display: flex;
@@ -359,7 +363,7 @@ body {
   height: 3vh;
   justify-content: center;
   align-items: center;
-  margin-top: 3%;
+  margin-top: 6%;
 }
 .shareBox {
   display: flex;
@@ -382,7 +386,6 @@ body {
   align-items: center;
   width: 100vw;
   height: 3vh;
-  border: 1px solid red;
 }
 .shareIconBox {
   display: flex;
@@ -398,5 +401,24 @@ body {
 }
 .shareIconBox img {
   width: 100%;
+  height: 100%;
+}
+.banner {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 35vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-image: url('https://i.pinimg.com/736x/02/d5/6e/02d56e691f101eca776607fd653491d0.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bannerBox {
+  display: flex;
+  flex-direction: row;
+  width: 88vw;
   height: 100%;
 }
