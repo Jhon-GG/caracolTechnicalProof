@@ -71,9 +71,9 @@
     <section class="audioPlayer">
         <div class="audioPlayerCenter">
             <div class="audioPlayerBox">
-                <a class="audioButton" href="https://traffic.omny.fm/d/clips/1fc614ef-7db7-429f-a252-a989012fd0c6/0698957d-3bf8-4ceb-a451-aeda015e2616/f048be02-cbb1-427d-a1e8-aee301640c97/audio.mp3">
-                    <img src="src/assets/images/audioPlayer.svg" alt="play">
-                </a>
+                <button class="audioButton" id="playButton">
+                    <img id="playIcon" src="src/assets/images/audioPlayer.svg" alt="play">
+                </button>
                 <div class="audioTitle">
                     <h1>Escuchar Audio</h1>
                     <p>Tr, perdónalo <span>45:46</span></p>
@@ -81,6 +81,10 @@
             </div>
         </div>
     </section>
+    
+    <audio id="audioPlayer">
+        <source src="https://traffic.omny.fm/d/clips/1fc614ef-7db7-429f-a252-a989012fd0c6/0698957d-3bf8-4ceb-a451-aeda015e2616/f048be02-cbb1-427d-a1e8-aee301640c97/audio.mp3" type="audio/mp3">
+    </audio>
     <section class="share">
         <div class="shareBox">
             <h1>Compartir:</h1>
