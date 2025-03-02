@@ -681,7 +681,7 @@ body {
     width: 49vw;
   }
   .headlineBox h1 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: #EE2c64;
     height: auto;
     width: 70%;
@@ -692,6 +692,7 @@ body {
     height: auto;
     width: 80%;
     font-size: 1.3rem;
+    margin-top: 1%;
   }
   .audioPlayer {
     display: flex;
@@ -761,7 +762,7 @@ body {
     height: 3vh;
     justify-content: center;
     align-items: center;
-    margin-top: 1%;
+    margin-top: 2%;
   }
   .shareBox {
     display: flex;
@@ -808,7 +809,6 @@ body {
     justify-content: space-between;
     width: 45vw;
     height: 60vh;
-    background-image: url('https://i.pinimg.com/736x/02/d5/6e/02d56e691f101eca776607fd653491d0.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

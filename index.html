@@ -16,14 +16,11 @@
             <button class="headerBurger">
                 <img class="burgerImg" src="src/assets/images/MaterialSymbolsMenu.svg" alt="burger">
             </button>
-            <img class="headerLogo" src="src/assets/images/logo.png" alt="logo">
+            <img id="logo-container" class="headerLogo" src="" alt="logo">
         </div>
         <nav class="navMenu">
             <ul class="menuList">
-                <li><a href="https://www.bumbox.com/category/actualidad-3">Actualidad</a></li>
-                <li><a href="https://www.bumbox.com/category/opinion">Opinión</a></li>
-                <li><a href="https://www.bumbox.com/category/estilo-de-vida">Estilo de vida</a></li>
-                <li><a href="https://www.bumbox.com/category/negocios">Negocios</a></li>
+                <!-- Los elementos del menú se cargarán dinámicamente -->
             </ul>
         </nav>
     </header>
@@ -31,43 +28,27 @@
         <section class="trendingCenter">
             <div class="trendingBox">
                 <span class="trendingSpan">Tendencias:</span> <br>
-                <a href="https://www.bumbox.com/category/al-pelo-con-tata-video-podcast">Al pelo con Tata Video Podcast</a>
-                <a href="https://www.bumbox.com/category/banqueras-1">Banqueras</a>
-                <a href="https://www.bumbox.com/category/diana-munoz">Diana Muñoz</a>
-                <a href="https://www.bumbox.com/category/el-elevador-1">El Elevador</a>
+                <!-- Los temas de tendencia se cargarán dinámicamente -->
             </div>
             <div class="socialBox">
-                <a href="https://www.facebook.com/CaracolTV"><img src="src/assets/images/facebook.svg" alt="facebook"></a>
-                <a href="https://www.instagram.com/caracoltv/"><img src="src/assets/images/instagram.svg" alt="Instagram"></a>
-                <a href="https://x.com/CaracolTV"><img src="src/assets/images/twitter.svg" alt="Twitter"></a>
-                <a href="https://www.youtube.com/@caracoltv"><img src="src/assets/images/youtube.svg" alt="Youtube"></a>.
+                <!-- Los iconos sociales se cargarán dinámicamente -->
             </div>
         </section>
     </nav>
     <section class="pageLead">
-        <img src="src/assets/images/nav.png" alt="navImg">
+        <img src="" alt="navImg">
     </section>
     <section class="start">
         <div class="startBox">
-            <a class="startInicio" href="https://www.bumbox.com/">Inicio</a>
-            <span>></span>
-            <a class="startHumor" href="https://www.bumbox.com/category/humor"> Humor</a>
-            <span>></span>
-            <div class="boxSosp">
-                <a class="startSosp" href="https://www.bumbox.com/show/sospechosamente-light">Sospechosamente Light</a>
-            </div>
-            <span>></span>
-            <div class="boxSpan">
-                <p class="spanTato">Tato es el mejor hombre del mundo; por favor, perdónalo</p>
-            </div>
+            <!-- Las migas de pan (breadcrumbs) se cargarán dinámicamente -->
         </div>
     </section>
     <div class="main">
         <div class="mainCenter">
             <section class="headline">
                 <div class="headlineBox">
-                    <h1>Tato es el mejor hombre del mundo; por favor, perdónalo</h1>
-                    <p>A nosotros también nos tocó el despecho, también celebramos pequeños triunfos de la adultez y también a veces nos quedan 3 góticas en el bizcocho.<br/>No nos echen la culpa si se vuelven adictos a este podcast.</p>
+                    <h1></h1>
+                    <p></p>
                 </div>
             </section>
             <section class="audioPlayer">
@@ -78,13 +59,13 @@
                         </button>
                         <div class="audioTitle">
                             <h1>Escuchar Audio</h1>
-                            <p>Tr, perdónalo <span>45:46</span></p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
             </section>
             <audio id="audioPlayer">
-                <source src="https://traffic.omny.fm/d/clips/1fc614ef-7db7-429f-a252-a989012fd0c6/0698957d-3bf8-4ceb-a451-aeda015e2616/f048be02-cbb1-427d-a1e8-aee301640c97/audio.mp3" type="audio/mp3">
+                <source src="" type="audio/mp3">
             </audio>
             <section class="share">
                 <div class="shareBox">
@@ -93,8 +74,7 @@
             </section>
             <section class="shareIcons">
                 <div class="shareIconBox">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.bumbox.com/show/sospechosamente-light"><img src="src/assets/images/facebook2.svg" alt="facebook"></a>
-                    <a href="https://x.com/intent/tweet?text=Escucha%20este%20podcast%20genial!&url=https://www.bumbox.com/show/sospechosamente-light" alt="twitter"><img src="src/assets/images/twitter2.svg" alt=""></a>
+                    <!-- Los botones de compartir se cargarán dinámicamente -->
                 </div>
             </section>
         </div>
@@ -105,6 +85,7 @@
         </section>
     </div>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
     <script src="src/js/app.js" defer></script>
 </body>
 </html>
