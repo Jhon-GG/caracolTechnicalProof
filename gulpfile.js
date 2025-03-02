@@ -40,6 +40,18 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('dist/src/js'));
 });
 
+gulp.task('scripts2', function() {
+  return gulp.src('src/js/validation.js')
+    .pipe(uglify({
+      mangle: false,  
+      compress: {
+        sequences: false,  
+        properties: false  
+      }
+    }))
+    .pipe(gulp.dest('dist/src/js'));
+});
+
 
 gulp.task('styles', function() {
   return gulp.src('src/styles/main.less')
@@ -83,7 +95,7 @@ gulp.task('rootCss', function() {
 
 gulp.task('default', gulp.series(
   'clean',
-  gulp.parallel('html', 'scripts', 'styles', 'assets', 'data', 'rootAssets', 'otherHtml', 'rootCss')
+  gulp.parallel('html', 'scripts', 'scripts2', 'styles', 'assets', 'data', 'rootAssets', 'otherHtml', 'rootCss')
 ));
 
 

@@ -519,11 +519,13 @@ function loadAudioPlayerData(data) {
 }
 
 /**
- * Loads and displays share buttons from the provided data
+ * Loads and displays share buttons from the provided JSON data
  * @param {Object} data - The JSON data containing share button information
+ * @description This function populates the share button container using data from the "share" array.
+ * It creates anchor elements with appropriate icons and links for social media sharing.
  */
 function loadShareButtons(data) {
-    if (data.actions && data.actions.length > 0 && data.actions[0].items) {
+    if (data.share && data.share.length > 0) {
         /**
          * The share icon box container element
          * @type {HTMLElement}
@@ -531,51 +533,77 @@ function loadShareButtons(data) {
         const shareIconBox = document.querySelector('.shareIconBox');
         shareIconBox.innerHTML = ''; 
         
-        // Validate share items
-        const shareValidation = validateShareItems(data.actions[0].items);
-        if (!shareValidation.isValid) {
-            console.error('Errors in share items:', shareValidation.errors);
-            return; // Don't load items with errors
-        }
-        
         /**
-         * Iterates through each share action and creates corresponding elements
-         * based on the template type (Facebook or Twitter)
+         * Iterates through each share item and creates corresponding elements
+         * @type {Array}
          */
-        data.actions[0].items.forEach(item => {
-            if (item._template.includes('Facebook')) {
-                const shareHref = sanitizeUrl(item.shareHref);
-                if (!shareHref) {
-                    console.warn('Invalid Facebook URL ignored:', item.shareHref);
-                    return; // Skip this element
-                }
-                
-                const a = document.createElement('a');
-                a.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareHref)}`;
-                
-                const img = document.createElement('img');
-                img.src = 'src/assets/images/facebook2.svg';
-                img.alt = 'facebook';
-                
-                a.appendChild(img);
-                shareIconBox.appendChild(a);
-            } else if (item._template.includes('Twitter')) {
-                const twitterUrl = sanitizeUrl(item.url);
-                if (!twitterUrl) {
-                    console.warn('Invalid Twitter URL ignored:', item.url);
-                    return; // Skip this element
-                }
-                
-                const a = document.createElement('a');
-                a.href = `https://x.com/intent/tweet?text=${encodeURIComponent(sanitizeText(item.text))}&url=${encodeURIComponent(twitterUrl)}`;
-                
-                const img = document.createElement('img');
-                img.src = 'src/assets/images/twitter2.svg';
-                img.alt = 'twitter';
-                
-                a.appendChild(img);
-                shareIconBox.appendChild(a);
+        data.share.forEach(item => {
+            /**
+             * Anchor element for the share button
+             * @type {HTMLAnchorElement}
+             */
+            const a = document.createElement('a');
+            
+            /**
+             * Image element for the share icon
+             * @type {HTMLImageElement}
+             */
+            const img = document.createElement('img');
+            
+            /**
+             * Sanitized image source URL
+             * @type {string|null}
+             */
+            const imageSrc = sanitizeUrl(item.src);
+            if (!imageSrc) {
+                console.warn('Invalid share icon URL ignored:', item.src);
+                return; // Skip this element
             }
+            
+            // Set image properties from JSON
+            img.src = imageSrc;
+            img.alt = sanitizeText(item.alt || 'Share');
+            
+            /**
+             * Sanitized share URL
+             * @type {string|null}
+             */
+            const shareHref = sanitizeUrl(item.href);
+            if (!shareHref) {
+                console.warn('Invalid share URL ignored:', item.href);
+                return; // Skip this element
+            }
+            
+            a.href = shareHref;
+            
+            // Configure additional options if they exist
+            if (item.target) {
+                a.target = item.target;
+            }
+            
+            /**
+             * Adds popup window behavior for social sharing links
+             * @type {boolean}
+             */
+            const isSocialShareLink = item.href.includes('facebook.com/sharer') || 
+                                     item.href.includes('twitter.com/intent');
+            
+            if (item.display === 'popup' || isSocialShareLink) {
+                a.target = '_blank';
+                
+                /**
+                 * Click event handler to open a popup window for sharing
+                 * @param {Event} e - The click event object
+                 * @listens click
+                 */
+                a.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.open(this.href, 'sharePopup', 'width=600,height=400');
+                });
+            }
+            
+            a.appendChild(img);
+            shareIconBox.appendChild(a);
         });
     }
 }

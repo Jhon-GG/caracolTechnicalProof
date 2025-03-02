@@ -32,8 +32,8 @@
   ],
   "actions": [{
     "items": [
-      {"_template": "/facebook/FacebookShareButton.hbs", "body": "Facebook", "display": "popup", "facebookAppId": "721624568931759", "redirectUri": "", "shareHref": "https%3A%2F%2Fwww.bumbox.com%2Fhumor%2Fsospechosamente-l-mejor-hombre-del-mundo-por-favor-perdonalo"},
-      {"_template": "/twitter/intent/TwitterTweetButton.hbs", "body": "Tweet", "hashtags": "", "text": "Tato%20es%20el%20mejor%20hombre%20del%20mundo%3B%20por%20favor%2C%20perd%C3%B3nalo", "url": "https%3A%2FFhumor%2Fsospechosamente-light%2Ftato-es-el-mejor-hombre-del-mundo-por-favor-perdonalo"}
+      {"_template": "/facebook/FacebookShareButton.hbs", "body": "Facebook", "display": "popup", "src": "https://i.postimg.cc/sxfg1pSV/Mdi-Facebook.png", "facebookAppId": "721624568931759", "redirectUri": "", "shareHref": "https%3A%2F%2Fwww.bumbox.com%2Fhumor%2Fsospechosamente-l-mejor-hombre-del-mundo-por-favor-perdonalo"},
+      {"_template": "/twitter/intent/TwitterTweetButton.hbs", "body": "Tweet", "hashtags": "", "text": "Tato%20es%20el%20mejor%20hombre%20del%20mundo%3B%20por%20favor%2C%20perd%C3%B3nalo", "src": "https://i.postimg.cc/nzFJ1nL2/Mdi-Twitter.png", "url": "https%3A%2FFhumor%2Fsospechosamente-light%2Ftato-es-el-mejor-hombre-del-mundo-por-favor-perdonalo"}
     ]
   }],
   "navigation": [{
@@ -154,6 +154,18 @@
         "width": "153",
         "height": "27"
       }
+    }
+  ],
+  "share":[
+    {
+      "alt": "Facebook",
+      "href": "https://www.facebook.com/sharer/sharer.php?u=https://www.bumbox.com/show/sospechosamente-light",
+      "src": "https://i.postimg.cc/sxfg1pSV/Mdi-Facebook.png"
+    },
+    {
+      "alt": "Twitter",
+      "href": "https://twitter.com/intent/tweet?text=¡Mira%20esto!&url=https://www.bumbox.com/show/sospechosamente-light",
+      "src": "https://i.postimg.cc/nzFJ1nL2/Mdi-Twitter.png"
     }
   ]
 }
