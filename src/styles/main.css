@@ -668,7 +668,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    min-height: 22vh;
     width: 55vw;
     margin: 0;
   }
@@ -677,7 +677,7 @@ body {
     flex-direction: column;
     align-items: start;
     justify-content: flex-start;
-    height: 100%;
+    min-height: 22vh;
     width: 49vw;
   }
   .headlineBox h1 {
@@ -693,15 +693,17 @@ body {
     width: 80%;
     font-size: 1.3rem;
     margin-top: 1%;
+    border: none;
+    margin-bottom: 0;
   }
   .audioPlayer {
     display: flex;
     flex-direction: row;
     width: 55vw;
-    height: 6vh;
+    min-height: 6vh;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin-top: 2%;
   }
   .audioPlayerCenter {
     display: flex;
@@ -714,13 +716,15 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 32%;
-    height: 100%;
+    width: 34%;
+    min-height: 6vh;
     background-color: #f7d25f;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    padding: 2px;
+    gap: 2px;
   }
   .audioButton {
     display: flex;
@@ -735,25 +739,29 @@ body {
     cursor: pointer;
   }
   .audioPlayerBox img {
-    width: 80;
-    height: 80%;
+    width: 90%;
+    height: 90%;
   }
   .audioTitle {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    width: 65%;
     height: 100%;
   }
   .audioTitle h1 {
-    font-size: 1.3rem;
+    font-size: 100%;
+    min-width: 90%;
+    height: auto;
+    white-space: nowrap;
     color: #000;
     margin: 0;
   }
   .audioTitle p {
-    font-size: 1rem;
+    font-size: 100%;
     color: #000;
     margin: 0;
+    white-space: nowrap;
   }
   .share {
     display: flex;
@@ -809,6 +817,7 @@ body {
     justify-content: space-between;
     width: 45vw;
     height: 60vh;
+    background-image: url('https://i.pinimg.com/736x/02/d5/6e/02d56e691f101eca776607fd653491d0.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
