@@ -16,7 +16,15 @@
             <button class="headerBurger">
                 <img class="burgerImg" src="src/assets/images/MaterialSymbolsMenu.svg" alt="burger">
             </button>
+            {{#if logo}}
+            {{#with logo.[0]}}
+            <a href="{{href}}">
+                <img class="headerLogo" src="{{image.src}}" alt="{{alt}}" width="{{image.width}}" height="{{image.height}}">
+            </a>
+            {{/with}}
+            {{else}}
             <img class="headerLogo" src="src/assets/images/logo.png" alt="logo">
+            {{/if}}
         </div>
         <nav class="navMenu">
             <ul class="menuList">

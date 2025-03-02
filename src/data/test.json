@@ -1,12 +1,16 @@
 {
   "breadcrumbs": [
     {
-      "body": "Humor",
-      "href": "https://www.bumbox.com/humor"
+      "body": "Inicio",
+      "href": "https://www.bumbox.com/"
     },
     {
-      "body": "Sospechosamente Light",
-      "href": "https://www.bumbox.com/humor/sospechosamente-light"
+      "body": "Humor",
+      "href": "https://www.bumbox.com/category/humor"
+    },
+    {
+      "body": "Sospechosamente light",
+      "href": "https://www.bumbox.com/show/sospechosamente-light"
     },
     {
       "body": "Tato es el mejor hombre del mundo; por favor, perdónalo",
@@ -29,58 +33,45 @@
   "actions": [{
     "items": [
       {"_template": "/facebook/FacebookShareButton.hbs", "body": "Facebook", "display": "popup", "facebookAppId": "721624568931759", "redirectUri": "", "shareHref": "https%3A%2F%2Fwww.bumbox.com%2Fhumor%2Fsospechosamente-l-mejor-hombre-del-mundo-por-favor-perdonalo"},
-      {"_template": "/twitter/intent/TwitterTweetButton.hbs", "body": "Tweet", "hashtags": "", "text": "Tato%20es%20el%20mejor%20hombre%20del%20mundo%3B%20por%20favor%2C%20perd%C3%B3nalo", "url": "https%3A%2FFhumor%2Fsospechosamente-light%2Ftato-es-el-mejor-hombre-del-mundo-por-favor-perdonalo"},
-      {"_template": "/whatsapp/WhatsAppShareButton.hbs", "body": "WhatsApp", "description": "Tato%20es%20el%20mejor%20hombre%20del%20mundo%3B%20por%20favor%2C%20perd%C3%B3nalo", "url": "https%3A%2F%2Fsospechosamente-light%2Ftato-es-el-mejor-hombre-del-mundo-por-favor-perdonalo"}
+      {"_template": "/twitter/intent/TwitterTweetButton.hbs", "body": "Tweet", "hashtags": "", "text": "Tato%20es%20el%20mejor%20hombre%20del%20mundo%3B%20por%20favor%2C%20perd%C3%B3nalo", "url": "https%3A%2FFhumor%2Fsospechosamente-light%2Ftato-es-el-mejor-hombre-del-mundo-por-favor-perdonalo"}
     ]
   }],
   "navigation": [{
     "items": [{
+      "alt": "Actualidad",
       "attributes": [ ], 
       "contentId": "", 
-      "href": "https://www.caracol/actualidad", 
+      "href": "https://www.bumbox.com/category/actualidad-3", 
       "isCurrent": false, 
       "items": [ ], 
       "text": "Actualidad", "isCached": false
       },
       { 
+        "alt": "Opinión",
         "attributes": [ ], 
         "contentId": "00000182-d825-d5bb-a5ab-fbefb4dc0009", 
-        "href": "https://w.com/opinion", 
+        "href": "https://www.bumbox.com/category/opinion", 
         "isCurrent": false,
         "items": [ ], 
         "text": "Opinión"
       },
       { 
+        "alt": "Estilo de vida",
         "attributes": [ ], 
         "contentId": "00000182-d825-d5bb-a5ab-fbefb4dc0009", 
-        "href": "https://w.com/opinion", 
+        "href": "https://www.bumbox.com/category/estilo-de-vida", 
         "isCurrent": false,
         "items": [ ], 
         "text": "Estilo de vida"
       },
       {
+        "alt": "Negocios",
         "attributes": [ ], 
         "contentId": "", 
-        "href": "https://www.caracol/option", 
+        "href": "https://www.bumbox.com/category/negocios", 
         "isCurrent": false, 
         "items": [ ], 
-        "text": "Actualidad", "isCached": false
-      },
-      {
-        "attributes": [ ], 
-        "contentId": "", 
-        "href": "https://www.caracol/option", 
-        "isCurrent": false, 
-        "items": [ ], 
-        "text": "option", "isCached": false
-      },
-      {
-        "attributes": [ ], 
-        "contentId": "", 
-        "href": "https://www.caracol/option", 
-        "isCurrent": false, 
-        "items": [ ], 
-        "text": "option", "isCached": false
+        "text": "Negocios", "isCached": false
       }]
   }],
   "social": [{
@@ -130,25 +121,25 @@
   "hotTopics": [
     {
       "target": "_blank",
-      "title": "Lorem ipsum",
-      "url": "https://www.bumbox-se-aLoremipsum-vi"
+      "title": "Al pelo con Tata Video Podcast",
+      "url": "https://www.bumbox.com/category/al-pelo-con-tata-video-podcast"
     },
     {
       "target": "_blank",
-      "title": "Lorem ipsum",
-      "url": "https://www.bumbox-sLoremipsum"
+      "title": "Banqueras",
+      "url": "https://www.bumbox.com/category/banqueras-1"
 
     },
     {
       "target": "_blank",
-      "title": "Lorem ipsum",
-      "url": "https://www.bumbox-sLoremipsum"
+      "title": "Diana Muñoz",
+      "url": "https://www.bumbox.com/category/diana-munoz"
 
     },
     {
       "target": "_blank",
-      "title": "Lorem ipsum",
-      "url": "https://www.bumbox-sLoremipsum"
+      "title": "El Elevador",
+      "url": "https://www.bumbox.com/category/el-elevador-1 "
 
     }
   ],
@@ -161,6 +152,18 @@
         "src": "https://caracoltv.brightspotcdn.com/5a/de/fe07a28945b6a2b1720696f8c1ae/frame.png",
         "width": "153",
         "height": "27"
+      }
+    }
+  ],
+  "logo2":[
+    {
+      "alt": "Logo Blanco",
+      "attributes": [],
+      "href": "/",
+      "image": {
+        "src": "https://co.pinterest.com/pin/983895849843952572/",
+        "width": "500px",
+        "height": "500px"
       }
     }
   ]
