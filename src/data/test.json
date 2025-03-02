@@ -78,23 +78,24 @@
     "items": [
       {
         "body": "Body1",
-        "href": "httpom/BumBoxco",
-        "socialService": "twitter"
+        "href": "https://www.facebook.com/CaracolTV?locale=es_LA",
+        "socialService": "facebook"
       },
       {
         "body": "Body2",
-        "href": "https:/ram.com/bumboxpodcast/",
+        "href": "https://www.instagram.com/caracoltv/",
         "socialService": "instagram"
       },
       {
         "body": "Body3",
-        "href": "https://wXPOaKUtn4suxA",
-        "socialService": "youtube"
+        "href": "https://x.com/CaracolTV",
+        "socialService": "twitter"
       },
+      
       {
-        "body": "Body3",
-        "href": "https://xpodcast-105521988722877",
-        "socialService": "facebook"
+        "body": "Body4",
+        "href": "https://www.youtube.com/@caracoltv",
+        "socialService": "youtube"
       }
     ]
   }],
